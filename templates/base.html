@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Mi Aplicación{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>{% block header %}Bienvenido a mi aplicación{% endblock %}</h1>
+    </header>
+    <main>
+        {% block content %}
+        <p>Esta es la página de inicio de mi aplicación.</p>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2023 Mi Aplicación</p>
+    </footer>
+</body>
+</html>
